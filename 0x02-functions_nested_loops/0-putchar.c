@@ -13,5 +13,5 @@ for (i = 0; i <= 7; i++)
 putchar(word[i]);
 }
 putchar('\n');
-return(0);
+return (0);
 }
