@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlb.h>
+#include<stdlib.h>
 /**
 *main - main block
 *Description: computes nad prints the sum of all the
