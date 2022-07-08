@@ -7,27 +7,25 @@
 */
 void print_number(int n)
 {
-int copy, nth, size = 1, ones = n % 10;
-n /= 10;
-copy = n;
-if (ones < 0)
+unsigned int x, y, count;
+if (n < 0)
 {
-ones *= -1, copy *= -1, n *= -1;
-_putchar('-');
+_putchar(45);
+x = -n;
 }
-if (copy > 0)
+else
 {
-while (copy / 10 != 0)
+x = n;
+}
+y = x;
+count = 1;
+while (y > 9)
 {
-copy /= 10, size *= 10;
+y /= 10;
+count *= 10;
 }
-while (size > 0)
+for (; count >= 1; count /= 10)
 {
-nth = n / size;
-_putchar('0' + nth);
-n -= nth * size;
-size /= 10;
+_putchar(((x / count) % 10) + 48);
 }
-}
-_putchar('0' + ones);
 }
