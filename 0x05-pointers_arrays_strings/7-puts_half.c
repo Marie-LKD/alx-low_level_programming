@@ -10,7 +10,7 @@ int index, length;
 length = 0;
 while (str[length] != '\0')
 {
-length++
+length++;
 }
 if ((length % 2) != 0)
 {
