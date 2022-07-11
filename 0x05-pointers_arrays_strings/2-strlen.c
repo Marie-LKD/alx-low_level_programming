@@ -11,7 +11,7 @@ length = 0;
 while (*s != '\0')
 {
 s++;
-lenght++;
+length++;
 }
 return (length);
 }
