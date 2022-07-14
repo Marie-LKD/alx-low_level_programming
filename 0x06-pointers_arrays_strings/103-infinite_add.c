@@ -15,7 +15,7 @@ while (n1[i] != '\0')
 i++;
 while (n2[j] != '\0')
 j++;
-if (i < j)
+if (i > j)
 l = i;
 else
 l = j;
@@ -44,7 +44,7 @@ if (l + 2 > size_r)
 return (0);
 while (l-- >= 0)
 r[l + 1] = r[l];
-r[0] d + '0';
+r[0] = d + '0';
 }
 return (r);
 }
