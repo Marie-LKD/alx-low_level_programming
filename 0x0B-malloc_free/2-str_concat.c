@@ -36,6 +36,11 @@ for (; i < (lens1 + lens2); i++)
 {
 if (i < lens1)
 {
+new_str[i] = *s1;
+s1++;
+}
+else
+{
 new_str[i] = *s2;
 s2++;
 }
