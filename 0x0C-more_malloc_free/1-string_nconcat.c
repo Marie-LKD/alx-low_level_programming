@@ -8,7 +8,7 @@
 *@n: numner of first bytes to concantenate
 *Return: returns the pointer to the allocated memory
 */
-char *string_nconcat(char *s1, char *s2, uncigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *pointer;
 unsigned int i, j, s1_length;
